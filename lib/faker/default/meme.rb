@@ -2,16 +2,15 @@
 
 module Faker
   class Meme < Base
-    flexible :meme
     class << self
       # Fetch random meme character
       def character
-        fetch('meme.character')
+        fetch('meme.characters')
       end
 
-      # Fetch random meme name
-      def name
-        fetch('meme.name')
+      # Fetch random meme title
+      def title
+        fetch('meme.titles')
       end
     end
   end

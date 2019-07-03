@@ -42,6 +42,18 @@ module Faker
       def genre
         fetch('music.genres')
       end
+
+      def subgenre
+        fetch('music.subgenres')
+      end
+
+      def billboard_number_ones
+        fetch('music.billboard_number_ones')
+      end
+
+      def bad_hits
+        fetch('music.bad_hits')
+      end
     end
   end
 end

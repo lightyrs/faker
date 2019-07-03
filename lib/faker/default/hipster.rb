@@ -3,6 +3,10 @@
 module Faker
   class Hipster < Base
     class << self
+      def noun
+        random_word = sample(translate('faker.hipster.nouns'))
+      end
+
       def word
         random_word = sample(translate('faker.hipster.words'))
         random_word =~ /\s/ ? word : random_word
