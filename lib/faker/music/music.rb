@@ -52,7 +52,7 @@ module Faker
       end
 
       def bad_hits
-        fetch('music.bad_hits')
+        fetch('music.bad_hits').gsub('"', "'")
       end
     end
   end
