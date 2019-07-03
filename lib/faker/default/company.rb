@@ -53,6 +53,14 @@ module Faker
         fetch('company.profession')
       end
 
+      def fortune500
+        fetch('company.fortune500')
+      end
+
+      def franchise
+        fetch('company.franchise')
+      end
+
       # rubocop:disable Style/AsciiComments
       # Get a random Spanish organization number. See more here https://es.wikipedia.org/wiki/Número_de_identificación_fiscal
       # rubocop:enable Style/AsciiComments
